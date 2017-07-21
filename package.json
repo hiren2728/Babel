@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel" : "babel --presets es2015 JS/Main.js -o build/build.js",
-    "start": "http-server -p 9000"
+    "babel": "babel --presets es2015 JS/Main.js -o build/build.js",
+    "start": "http-server -p 9000",
+    "webpack": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,9 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2016": "^6.24.1",
     "http-server": "^0.10.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.1",
+    "webpack": "^3.3.0"
   }
 }
